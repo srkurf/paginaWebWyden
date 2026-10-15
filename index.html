@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+      <!-- Menu Header -->
+    <div class="contenedor-header">
+            <div class="top-bar">
+    <!-- Ubicación -->
+    <div class="top-item">
+        <i class="fa-solid fa-location-dot icon-orange"></i>
+        <span>Av. Las Rosas 16-90, Guatemala, C.P. a</span>
+    </div>
+
+    <!-- Slogan central -->
+    <div class="top-slogan">
+        <i class="fa-solid fa-plus icon-orange"></i>
+        <span>Más que fotos, emociones inmortalizadas.</span>
+        <i class="fa-solid fa-plus icon-orange"></i>
+    </div>
+
+    <!-- Teléfonos -->
+    <div class="top-item">
+        <i class="fa-solid fa-phone icon-orange"></i>
+        <div class="text-group">
+            <span>4234 6587</span>
+            <span>4856 4587</span>
+        </div>
+    </div>
+
+    <!-- Correos -->
+    <div class="top-item">
+        <i class="fa-solid fa-envelope icon-orange"></i>
+        <div class="text-group">
+            <span>202300688@farusac.edu.gt</span>
+            <span>202204930@farusac.edu.gt</span>
+        </div>
+    </div>
+</div>
+      <header>
+        <div class="logo">
+          <a href="#">WYDEN PHOTOGRAFHY</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+            <li><a href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a>
+            </li>
+             <li><a href="#paquetes" onclick="seleccionar()">PAQUETES</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+             <li><a class="reserva" href="#reserva" onclick="seleccionar()">RESERVA TU SESION</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsible" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+        <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <!-- Bloque de texto a la izquierda -->
+        <div class="contenedor-texto">
+            <p>Somos Wyden Photography, apasionados por capturar emociones y transformar momentos en recuerdos eternos. Cada fotografía cuenta una historia, y la tuya merece ser inmortalizada con arte.</p>
+        </div>
+        <!-- Bloque de botones a la derecha -->
+        <div class="contenedor-botones">
+            <button class="btn-reserva">RESERVA TU SESION</button>
+            <button class="btn-explora">EXPLORA</button>
+        </div>
+    </div>
+</section>
+<!-- Sección Sobre Nosotros -->
+<section id="nosotros" class="sobre-nosotros">
+    <div class="nosotros-container">
+        
+        <!-- Columna Izquierda: Frase destacada -->
+        <div class="nosotros-frase">
+            <h2>Una buena fotografía no solo se mira, se siente.</h2>
+            <span class="autor">Wyden Photography</span>
+        </div>
+
+        <!-- Columna Derecha: Información de la empresa -->
+        <div class="nosotros-info">
+            <h3>SOBRE NOSOTROS</h3>
+            <p>Este año nace Wyden Photography, un proyecto creado para capturar emociones reales y convertirlas en arte visual.</p>
+            <p>Nos especializamos en retratos, eventos y proyectos creativos, cuidando cada detalle para que tus recuerdos perduren en el tiempo.</p>
+            <p>Más que fotógrafos, somos narradores de momentos.</p>
+        </div>
+
+    </div>
+</section>
+<!-- Sección Servicios -->
+<section id="servicios" class="seccion-servicios">
+    <div class="servicios-container">
+        
+        <!-- Cabecera de la sección -->
+        <div class="servicios-header">
+            <h2>SERVICIOS</h2>
+            <!-- Puedes colocar aquí tu logotipo o dejarlo libre -->
+        </div>
+
+        <p class="servicios-descripcion">
+            En Wyden Photography ofrecemos soluciones visuales adaptadas a cada historia. Cada sesión es una oportunidad para capturar emociones y transformar momentos en arte. Nos apasiona crear imágenes que reflejen autenticidad, técnica y sensibilidad.
+        </p>
+
+        <!-- Contenedor de las 4 tarjetas de servicios -->
+        <div class="tarjetas-grid">
+            
+            <!-- Tarjeta 1: Eventos -->
+            <div class="tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="img/imgEventos.jpg" alt="Eventos">
+                </div>
+                <h3>Eventos</h3>
+                <p>Capturamos la esencia de tus celebraciones y momentos especiales con atención al detalle y emoción.</p>
+            </div>
+
+            <!-- Tarjeta 2: Retrato Comercial -->
+            <div class="tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="img/imgRetrato.png" alt="Retrato Comercial">
+                </div>
+                <h3>Retrato Comercial</h3>
+                <p>Fotografía profesional para productos y marcas que buscan destacar con autenticidad y estilo.</p>
+            </div>
+
+            <!-- Tarjeta 3: Retrato Fotográfica -->
+            <div class="tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="img/imgFotografica.jpg" alt="Retrato Fotográfica">
+                </div>
+                <h3>Retrato Fotografica</h3>
+                <p>Sesiones personales que reflejan tu esencia y transmiten emociones a través de la luz y la composición.</p>
+            </div>
+
+            <!-- Tarjeta 4: Vida Silvestre -->
+            <div class="tarjeta">
+                <div class="imagen-contenedor">
+                    <img src="img/imgSilvestre.jpg" alt="Vida Silvestre">
+                </div>
+                <h3>Vida Silvestre</h3>
+                <p>Exploramos la belleza natural y la vida animal con respeto y pasión por el entorno.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Sección Portafolio -->
+<section id="portafolio" class="seccion-portafolio">
+    <div class="portafolio-container">
+        <!-- Cabecera de la sección -->
+        <div class="portafolio-header">
+            <h2>PORTAFOLIO</h2>
+            <p>Cada imagen cuenta una historia. Descubre los momentos que hemos capturado con pasión y creatividad.</p>
+        </div>
+        <!-- Galería de imágenes (Bento Grid de 15 fotos) -->
+        <div class="portafolio-grid">
+            <div class="item item-1"><img src="img/imgPortafolio/img1.jpg" alt="Foto 1"></div>
+            <div class="item item-2"><img src="img/imgPortafolio/img2.jpg" alt="Foto 2"></div>
+            <div class="item item-3"><img src="img/imgPortafolio/img3.jpg" alt="Foto 3"></div>
+            <div class="item item-4"><img src="img/imgPortafolio/img4.png" alt="Foto 4"></div>
+            <div class="item item-5"><img src="img/imgPortafolio/img5.jpg" alt="Foto 5"></div>
+            <div class="item item-6"><img src="img/imgPortafolio/img6.jpg" alt="Foto 6"></div>
+            <div class="item item-7"><img src="img/imgPortafolio/img7.png" alt="Foto 7"></div>
+            <div class="item item-8"><img src="img/imgPortafolio/img8.jpg" alt="Foto 8"></div>
+            <div class="item item-9"><img src="img/imgPortafolio/img9.png" alt="Foto 9"></div>
+            <div class="item item-10"><img src="img/imgPortafolio/img10.jpg" alt="Foto 10"></div>
+            <div class="item item-11"><img src="img/imgPortafolio/img11.jpg" alt="Foto 11"></div>
+            <div class="item item-12"><img src="img/imgPortafolio/img12.jpg" alt="Foto 12"></div>
+            <div class="item item-13"><img src="img/imgPortafolio/img13.jpg" alt="Foto 13"></div>
+            <div class="item item-14"><img src="img/imgPortafolio/img14.jpg" alt="Foto 14"></div>
+            <div class="item item-15"><img src="img/imgPortafolio/img15.jpg" alt="Foto 15"></div>
+        </div>
+
+    </div>
+</section>
+<!-- Sección Paquetes -->
+<section id="paquetes" class="seccion-paquetes">
+    <div class="paquetes-container">
+        
+        <!-- Cabecera de la sección -->
+        <div class="paquetes-header">
+            <h2>PAQUETES</h2>
+            <p>Explora nuestros paquetes y elige el ideal para tu sesión.</p>
+        </div>
+
+        <!-- Cuadrícula de 6 tarjetas de paquetes -->
+        <div class="paquetes-grid">
+            
+            <!-- Tarjeta 1 (Fondo Naranja) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img src="img/imgPaquetes/imgP1.jpg" alt="Primera Comunión">
+                    <div class="paquete-overlay naranja">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Primera Comunión</h4>
+            </div>
+
+            <!-- Tarjeta 2 (Fondo Turquesa) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img class="tarjeta2"src="img/imgPaquetes/imgP2.jpg" alt="Quince años">
+                    <div class="paquete-overlay turquesa">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Quince años</h4>
+            </div>
+
+            <!-- Tarjeta 3 (Fondo Naranja) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img src="img/imgPaquetes/imgP3.jpg" alt="Graduación">
+                    <div class="paquete-overlay naranja">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Graduación</h4>
+            </div>
+
+            <!-- Tarjeta 4 (Fondo Turquesa) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img src="img/imgPaquetes/imgP4.jpg" alt="Retrato Comercial">
+                    <div class="paquete-overlay turquesa">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Retrato Comercial</h4>
+            </div>
+
+            <!-- Tarjeta 5 (Fondo Naranja) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img src="img/imgPaquetes/imgP5.jpg" alt="Retrato Modelo">
+                    <div class="paquete-overlay naranja">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Retrato Modelo</h4>
+            </div>
+
+            <!-- Tarjeta 6 (Fondo Turquesa) -->
+            <div class="paquete-card">
+                <div class="paquete-img-container">
+                    <img src="img/imgPaquetes/imgP6.jpg" alt="Vida Silvestre">
+                    <div class="paquete-overlay turquesa">
+                        <h3>HAZ CLICK</h3>
+                        <span>PARA VER LOS PAQUETES</span>
+                    </div>
+                </div>
+                <h4 class="paquete-titulo">Vida Silvestre</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Sección Contáctanos / Información -->
+<section id="contacto" class="seccion-contacto">
+    <div class="contacto-container">
+        
+        <!-- Columna Izquierda: Logo, Marca y Descripción -->
+        <div class="contacto-col-left">
+            <div class="contacto-logo">
+                <img src="img/imgIcon.png" alt="Logo Wyden Photography">
+            </div>
+            <h2 class="contacto-brand">WYDEN</h2>
+            <span class="contacto-subbrand">Photography</span>
+            <p class="contacto-descripcion">
+                Estamos aquí para ayudarte a capturar tus mejores momentos. Escríbenos para reservar una sesión, solicitar información o colaborar en tu próximo proyecto fotográfico.
+            </p>
+        </div>
+
+        <!-- Columna Derecha: Contáctanos y Datos -->
+        <div class="contacto-col-right">
+            <h2>Contáctanos</h2>
+            
+            <ul class="contacto-list">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Av. Las Rosas 16-90, Guatemala, C.P. 01001</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+502 4234 6587 - +502 4856 4587</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>202300688@farusac.edu.gt</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>202204930@farusac.edu.gt</span>
+                </li>
+            </ul>
+
+            <!-- Redes Sociales -->
+            <div class="contacto-redes">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Sección Reserva tu Sesión -->
+<section id="reserva" class="seccion-reserva">
+    <div class="reserva-container">
+        
+        <!-- Columna Izquierda: Logo, Título, Descripción y Botón -->
+        <div class="reserva-col-left">
+            <div class="reserva-logo">
+                <img src="img/imgIcon.png" alt="Logo Wyden"> <!-- O usa tu icono de cámara -->
+            </div>
+            <h2>RESERVA TU SESIÓN</h2>
+            <p>Completa el formulario y nos pondremos en contacto contigo para confirmar tu fecha.</p>
+            
+            <button class="btn-enviar">Enviar solicitud</button>
+        </div>
+
+        <!-- Columna Derecha: Formulario con campos ovalados -->
+        <div class="reserva-col-right">
+            <form class="reserva-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="text" placeholder="Tipo de sesión" required>
+                <input type="text" placeholder="Fecha deseada" required>
+                <input type="text" placeholder="Lugar o locación" required>
+                <input type="tel" placeholder="Número de contacto / WhatsApp" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Comentarios adicionales" rows="4"></textarea>
+            </form>
+        </div>
+
+    </div>
+</section>
+<!-- Footer Final -->
+<footer class="site-footer">
+    <div class="footer-container">
+        
+        <!-- Columna 1: Marca y Lema -->
+        <div class="footer-col brand-col">
+            <div class="footer-logo-title">
+                <h2>WYDEN</h2>
+                <span>Photography</span>
+            </div>
+            <p class="footer-slogan">Más que fotos, emociones inmortalizadas.</p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="footer-col">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer-col">
+            <h3>Servicio</h3>
+            <ul>
+                <li>Fotografía de eventos</li>
+                <li>Fotografía de productos</li>
+                <li>Fotografía de modelos</li>
+                <li>Fotografía de vida silvestre</li>
+            </ul>
+        </div>
+
+        <!-- Columna 4: Contacto con Iconos -->
+        <div class="footer-col contacto-col">
+            <h3>Contacto</h3>
+            <div class="contacto-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Las Rosas 16-90, Guatemala, C.P. a</span>
+            </div>
+            <div class="contacto-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+502 4234 6587 - +502 4856 4587</span>
+            </div>
+            <div class="contacto-item">
+                <i class="fas fa-envelope"></i>
+                <span>202300688@farusac.edu.gt - 202204930@farusac.edu.gt</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,953 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Righteous";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contenedor-header {
+  background: #0d8781;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 1px solid #0d8781;
+}
+.contenedor-header header {
+  max-width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.contenedor-header header .logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+.contenedor-header header ul .reserva {
+  color: #000000;
+  background: #fe7115;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.contenedor-header header ul .reserva:hover {
+  background: #fff;
+}
+.contenedor-header header ul .reserva:hover a {
+  color: #fe7115;
+}
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+  color: #fe7115;
+}
+
+.nav-responsible {
+  background-color: #9fc131;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.inicio {
+  background-image: url("../img/imgBody.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-banner {
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contenedor-texto {
+  max-width: 550px;
+}
+
+.contenedor-texto p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.btn-reserva,
+.btn-explora {
+  padding: 25px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-reserva {
+  background-color: #00d2c4;
+  color: #111;
+  margin-right: 15px;
+}
+.btn-reserva:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #00d2c4;
+  padding: 28px 30px;
+}
+
+.btn-explora {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #00d2c4;
+}
+.btn-explora:hover {
+  background-color: #00d2c4;
+  color: #111;
+  padding: 28px 30px;
+}
+
+/* Barra contenedora superior */
+.top-bar {
+  background-color: #000000;
+  color: #00d2c4; /* Verde turquesa del texto */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+/* Grupo de icono + texto */
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Slogan central con los signos mas (+) */
+.top-slogan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+/* Agrupador de varias líneas de texto (Teléfonos y Correos) */
+.text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+/* Color naranja para los iconos */
+.icon-orange {
+  color: #ff6600; /* Tono naranja corporativo */
+  font-size: 16px;
+}
+
+/* Sección contenedora general */
+.sobre-nosotros {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 500px 5%; /* Espaciado superior/inferior para dar aire a la sección */
+}
+
+/* Distribución en dos columnas */
+.nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos partes iguales */
+  gap: 100px; /* Espacio entre la columna izquierda y derecha */
+  align-items: center;
+}
+
+/* --- Columna Izquierda --- */
+.nosotros-frase h2 {
+  font-size: 42px;
+  font-weight: 800; /* Tipografía gruesa similar a 'Righteous' o 'Montserrat ExtraBold' */
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.nosotros-frase .autor {
+  font-size: 16px;
+  color: #d1d1d1;
+  font-weight: 400;
+}
+
+/* --- Columna Derecha --- */
+.nosotros-info h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.nosotros-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  font-family: "Work Sans", sans-serif; /* Tipografía limpia para párrafos largos */
+}
+
+/* Elimina el margen del último párrafo */
+.nosotros-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Diseño Adaptable para Celulares --- */
+@media (max-width: 768px) {
+  .nosotros-container {
+    grid-template-columns: 1fr; /* En pantallas pequeñas se coloca una sobre otra */
+    gap: 40px;
+  }
+  .nosotros-frase h2 {
+    font-size: 32px;
+  }
+}
+/* Estilo general de la sección */
+/* Estilo general de la sección con fondo turquesa y texto negro */
+.seccion-servicios {
+  background-color: #0d8781; /* Fondo turquesa */
+  color: #000000; /* Texto negro general */
+  padding: 200px 5%;
+}
+
+.servicios-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Título de la sección */
+.servicios-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Título negro */
+}
+
+/* Párrafo descriptivo superior */
+.servicios-descripcion {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff; /* Texto descriptivo negro/oscuro */
+  max-width: 800px;
+  margin-bottom: 50px;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Cuadrícula para las 4 tarjetas */
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Estilo individual de cada tarjeta */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Contenedor de la imagen con esquinas redondeadas */
+.imagen-contenedor {
+  width: 100%;
+  height: 280px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #e0e0e0;
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta:hover img {
+  transform: scale(1.05);
+}
+
+/* Títulos de los servicios en negro */
+.tarjeta h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Descripciones de los servicios en negro */
+.tarjeta p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+}
+
+.portafolio-container {
+  background-color: #000000; /* Fondo turquesa */
+  color: #ffffff; /* Texto negro general */
+  padding: 200px 5%;
+}
+.portafolio-container .portafolio-header {
+  margin-bottom: 2%;
+}
+.portafolio-container .portafolio-header h2 {
+  margin-bottom: 10px;
+}
+
+/* --- DISEÑO DE MOSAICO DE 5 COLUMNAS Y 3 FILAS --- */
+.portafolio-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  grid-template-rows: repeat(3, 250px); /* 3 filas estables */
+  gap: 15px;
+}
+
+.portafolio-grid .item {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.portafolio-grid .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portafolio-grid .item:hover img {
+  transform: scale(1.04);
+}
+
+/* --- DISTRIBUCIÓN EXACTA DE LAS 15 FOTOS (5 columnas x 3 filas) --- */
+/* Fila 1 (Fotos 1 a 5) */
+.item-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.item-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.item-4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.item-5 {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+
+/* Fila 2 (Fotos 6 a 10) */
+.item-6 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item-7 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.item-8 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.item-9 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.item-10 {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+
+/* Fila 3 (Fotos 11 a 15) */
+.item-11 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.item-12 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.item-13 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.item-14 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.item-15 {
+  grid-column: 5/6;
+  grid-row: 3/4;
+}
+
+/* --- Adaptabilidad móvil --- */
+@media (max-width: 1024px) {
+  .portafolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .portafolio-grid .item {
+    height: 200px;
+  }
+}
+/* Estilo general de la sección de paquetes */
+.seccion-paquetes {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 250px 4%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.paquetes-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.paquetes-header {
+  margin-bottom: 50px;
+}
+
+.paquetes-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.paquetes-header p {
+  font-size: 16px;
+  color: #d1d1d1;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Cuadrícula de 6 columnas para las tarjetas */
+.paquetes-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.paquete-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Contenedor de la imagen vertical */
+.paquete-img-container {
+  position: relative;
+  width: 100%;
+  height: 380px; /* Altura vertical ideal */
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.paquete-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0%;
+     object-position: center 0%; /* Cambia este valor: entre más bajo el porcentaje (ej. 10% o 0%), más se subirá la imagen */
+  transition: transform 0.4s ease;
+}
+
+.paquete-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Capa de color inferior (efecto diagonal / superposición) */
+.paquete-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%; /* Ocupa la mitad inferior */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  /* Recorte diagonal superior similar a la imagen de referencia */
+  clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Colores de fondo de los overlays */
+.paquete-overlay.naranja {
+  background-color: #d35400; /* Color naranja institucional */
+  color: #ffffff;
+}
+
+.paquete-overlay.turquesa {
+  background-color: #00d2c4; /* Color turquesa de tu marca */
+  color: #000000;
+}
+
+/* Tipografía dentro del botón/overlay */
+.paquete-overlay h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.paquete-overlay span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Título debajo de cada tarjeta */
+.paquete-titulo {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* --- Adaptabilidad para pantallas más pequeñas --- */
+@media (max-width: 1200px) {
+  .paquetes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .paquetes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .paquetes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Estilo general de la sección de contacto */
+.seccion-contacto {
+  background-color: #0d8781;
+  color: #ffffff;
+  padding: 300px 8%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacto-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas simétricas */
+  gap: 80px;
+  align-items: start;
+}
+
+/* --- Columna Izquierda --- */
+.contacto-col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.contacto-logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  color: #ffffff;
+  width: 200px;
+}
+
+.contacto-brand {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1;
+}
+
+.contacto-subbrand {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.contacto-descripcion {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  max-width: 450px;
+}
+
+/* --- Columna Derecha --- */
+.contacto-col-right h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.contacto-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+}
+
+.contacto-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Iconos de ubicación, teléfono y correo en color turquesa */
+.contacto-list li i {
+  color: #00d2c4;
+  font-size: 18px;
+  width: 30px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+/* Redes Sociales */
+.contacto-redes {
+  display: flex;
+  gap: 15px;
+}
+
+.contacto-redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00d2c4;
+  border-radius: 50%;
+  color: #00d2c4;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contacto-redes a:hover {
+  background-color: #00d2c4;
+  color: #000000;
+  transform: translateY(-3px);
+}
+
+/* --- Adaptabilidad móvil --- */
+@media (max-width: 900px) {
+  .contacto-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+/* Estilo general de la sección */
+.seccion-reserva {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reserva-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Columna Izquierda */
+.reserva-col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reserva-logo {
+  font-size: 50px;
+  color: #00d2c4;
+  margin-bottom: 20px;
+}
+
+.reserva-logo img {
+  width: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.reserva-col-left h2 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.reserva-col-left p {
+  font-size: 15px;
+  color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 400px;
+}
+
+/* Botón Enviar Solicitud */
+.btn-enviar {
+  background-color: #00d2c4;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 45px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-enviar:hover {
+  opacity: 0.9;
+}
+
+/* Columna Derecha (Formulario) */
+.reserva-col-right {
+  width: 100%;
+}
+
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campos del formulario: bordes turquesa y diseño totalmente ovalado */
+.reserva-form input,
+.reserva-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #00d2c4;
+  border-radius: 40px;
+  padding: 16px 25px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.reserva-form textarea {
+  border-radius: 25px;
+  resize: none;
+}
+
+.reserva-form input::-moz-placeholder, .reserva-form textarea::-moz-placeholder {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.reserva-form input::placeholder,
+.reserva-form textarea::placeholder {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* --- Adaptabilidad móvil --- */
+@media (max-width: 900px) {
+  .reserva-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+/* --- ESTILOS DEL FOOTER TURQUESA --- */
+.site-footer {
+  background-color: #00d2c4; /* Fondo verde turquesa institucional */
+  color: #000000; /* Texto e iconos en color negro */
+  padding: 40px 4%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.footer-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.8fr; /* Proporción de las 4 columnas */
+  gap: 30px;
+  align-items: center;
+}
+
+/* Columna de Marca y Lema */
+.footer-col.brand-col {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-logo-title h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.footer-logo-title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.footer-slogan {
+  font-size: 15px;
+  line-height: 1.3;
+  max-width: 200px;
+  margin: 0;
+}
+
+/* Titulares de columna */
+.footer-col h3 {
+  font-family: "Righteous", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+/* Listas de enlaces y texto */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-col ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-col ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Datos de Contacto con Iconos */
+.contacto-col .contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.contacto-col .contacto-item i {
+  font-size: 14px;
+  min-width: 16px;
+}
+
+/* --- Adaptabilidad Responsive --- */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .footer-col.brand-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=index.css.map */

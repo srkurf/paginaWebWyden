@@ -1475,3 +1475,150 @@ html {
         grid-template-columns: 1fr;
     }
 }
+/* Estilos Generales de la Sección con tonos de fotografía antigua */
+.packages-section {
+  background-color: #D9D7B6; /* Fondo crema claro principal */
+  color: #4A4A3B; /* Texto oscuro cálido para legibilidad óptima */
+  padding: 250px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.packages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #6C6B50; /* Tono topo/gris cálido */
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #383A2C; /* Tono oliva oscuro profundo */
+}
+
+/* Grid de Tarjetas */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Tarjeta Individual */
+.pricing-card {
+  background: #F4F2C9; /* Tono arena claro derivado de la paleta */
+  border: 1px solid #D9D7B6; /* Borde sutil en tono arena */
+  border-radius: 16px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(56, 58, 44, 0.05);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  border-color: #545333; /* Oliva oscuro al pasar el cursor */
+}
+
+/* Tarjeta Destacada */
+.pricing-card.featured {
+  border: 2px solid #545333; /* Verde oliva oscuro para destacar */
+  background: #EFECC2; /* Variante un poco más cálida para el paquete central */
+  box-shadow: 0 10px 30px rgba(84, 83, 51, 0.15);
+}
+
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #545333; /* Verde oliva oscuro */
+  color: #FDFBD4; /* Texto crema */
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+/* Contenido de la Tarjeta */
+.card-title {
+  color: #545333; /* Verde oliva oscuro para los títulos de paquetes */
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card-price {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #383A2C; /* Tono oliva muy oscuro para destacar el precio con clase */
+  margin-bottom: 25px;
+}
+
+/* Lista de Beneficios */
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.card-features li {
+  font-size: 0.95rem;
+  color: #5A5946; /* Texto secundario legible y suave */
+  margin-bottom: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.check {
+  color: #545333; /* Visto en tono oliva oscuro */
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Botones de Acción */
+.btn-card {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-card.outline {
+  border: 1.5px solid #545333;
+  color: #545333;
+  background: transparent;
+}
+
+.btn-card.outline:hover {
+  background: #545333;
+  color: #FDFBD4;
+}
+
+.btn-card.primary {
+  background: #545333;
+  color: #FDFBD4;
+}
+
+.btn-card.primary:hover {
+  background: #383A2C;
+}

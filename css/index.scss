@@ -10,13 +10,13 @@ html {
 }
 //Estilos seccion BARRA DE NAVEGACION
 .contenedor-header {
-  background: #0d8781;
+  background: #878672;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  border-bottom: 1px solid #0d8781;
+  border-bottom: 1px solid #878672;
   header {
     max-width: 100%;
     margin: 20px auto;
@@ -35,14 +35,14 @@ html {
       list-style: none;
       .reserva {
         color: #000000;
-        background: #fe7115;
+        background: #FDFBD4;
         border-radius: 20px;
         padding: 10px 20px;
         transition: 0.5s;
         &:hover {
           background: #fff;
           a {
-            color: #fe7115;
+            color: #545333;
           }
         }
       }
@@ -55,7 +55,7 @@ html {
       transition: 0.5s;
       text-decoration: none;
       &:hover {
-        color: #fe7115;
+        color: #545333;
       }
     }
   }
@@ -70,6 +70,7 @@ html {
 }
 .inicio {
     background-image: url('../img/imgBody3.jpg');
+    margin-top: 150px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -108,30 +109,30 @@ html {
     text-decoration: none;
 }
 .btn-reserva {
-    background-color: #00d2c4;
-    color: #111;
+    background-color: #878672;
+    color: #fff;
     margin-right: 15px;
     &:hover {
         background-color: transparent;
         color: #fff;
-        border: 2px solid #00d2c4;
+        border: 2px solid #878672;
         padding: 28px 30px;
       }
 }
 .btn-explora {
     background-color: transparent;
     color: #fff;
-    border: 2px solid #00d2c4;
+    border: 2px solid #878672;
     &:hover {
-        background-color: #00d2c4;
+        background-color: #878672;
         color: #111;
         padding: 28px 30px;
       }
 }
 /* Barra contenedora superior */
 .top-bar {
-    background-color: #000000;
-    color: #00d2c4; /* Verde turquesa del texto */
+    background-color: #545333;
+    color: #fff; /* Verde turquesa del texto */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,12 +165,12 @@ html {
 
 /* Color naranja para los iconos */
 .icon-orange {
-    color: #ff6600; /* Tono naranja corporativo */
+    color: #FDFBD4; /* Tono naranja corporativo */
     font-size: 16px;
 }
 /* Sección contenedora general */
 .sobre-nosotros {
-    background-color: #000000;
+    background-color: #FDFBD4;
     color: #ffffff;
     padding: 500px 5%; /* Espaciado superior/inferior para dar aire a la sección */
 }
@@ -186,21 +187,23 @@ html {
 
 /* --- Columna Izquierda --- */
 .nosotros-frase h2 {
+    color: #000;
     font-size: 42px;
     font-weight: 800; /* Tipografía gruesa similar a 'Righteous' o 'Montserrat ExtraBold' */
     line-height: 1.2;
     margin-bottom: 30px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5px
 }
 
 .nosotros-frase .autor {
     font-size: 16px;
-    color: #d1d1d1;
+    color: #000;
     font-weight: 400;
 }
 
 /* --- Columna Derecha --- */
 .nosotros-info h3 {
+    color: #000;
     font-size: 26px;
     font-weight: 800;
     margin-bottom: 25px;
@@ -210,7 +213,7 @@ html {
 .nosotros-info p {
     font-size: 16px;
     line-height: 1.6;
-    color: #e0e0e0;
+    color: #000;
     margin-bottom: 20px;
     font-family: 'Work Sans', sans-serif; /* Tipografía limpia para párrafos largos */
 }
@@ -234,7 +237,7 @@ html {
 /* Estilo general de la sección */
 /* Estilo general de la sección con fondo turquesa y texto negro */
 .seccion-servicios {
-    background-color: #0d8781; /* Fondo turquesa */
+    background-color: #878672; /* Fondo turquesa */
     color: #000000;            /* Texto negro general */
     padding: 200px 5%;
 }
@@ -315,8 +318,8 @@ html {
     font-family: 'Work Sans', sans-serif;
 }
 .portafolio-container{
-    background-color: #000000; /* Fondo turquesa */
-    color: #ffffff;            /* Texto negro general */
+    background-color: #D9D7B6; /* Fondo turquesa */
+    color: #000;            /* Texto negro general */
     padding: 200px 5%;
     .portafolio-header{
         margin-bottom: 2%;
@@ -385,7 +388,7 @@ html {
 }
 /* Estilo general de la sección de paquetes */
 .seccion-paquetes {
-    background-color: #000000;
+    background-color: #878672;
     color: #ffffff;
     padding: 250px 4%;
     width: 100%;
@@ -471,12 +474,12 @@ html {
 
 /* Colores de fondo de los overlays */
 .paquete-overlay.naranja {
-    background-color: #d35400; /* Color naranja institucional */
+    background-color: #545333; /* Color naranja institucional */
     color: #ffffff;
 }
 
 .paquete-overlay.turquesa {
-    background-color: #00d2c4; /* Color turquesa de tu marca */
+    background-color: #FDFBD4; /* Color turquesa de tu marca */
     color: #000000;
 }
 
@@ -525,8 +528,8 @@ html {
 }
 /* Estilo general de la sección de contacto */
 .seccion-contacto {
-    background-color: #0d8781;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 300px 8%;
     width: 100%;
     box-sizing: border-box;
@@ -555,7 +558,7 @@ html {
 .contacto-logo img {
     width: 100%;
     object-fit: contain;
-    color: #ffffff;
+    color: #000;
     width: 200px;
 }
 
@@ -570,7 +573,7 @@ html {
 .contacto-subbrand {
     font-size: 18px;
     font-weight: 400;
-    color: #ffffff;
+    color: #000;
     margin-top: 5px;
     margin-bottom: 25px;
     letter-spacing: 1px;
@@ -579,7 +582,7 @@ html {
 .contacto-descripcion {
     font-size: 14px;
     line-height: 1.6;
-    color: #ffffff;
+    color: #000;
     font-family: 'Work Sans', sans-serif;
     max-width: 450px;
 }
@@ -604,12 +607,12 @@ html {
     margin-bottom: 20px;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-    color: #ffffff;
+    color: #000;
 }
 
 /* Iconos de ubicación, teléfono y correo en color turquesa */
 .contacto-list li i {
-    color: #00d2c4;
+    color: #878672;
     font-size: 18px;
     width: 30px;
     margin-right: 15px;
@@ -628,16 +631,16 @@ html {
     align-items: center;
     width: 40px;
     height: 40px;
-    border: 2px solid #00d2c4;
+    border: 2px solid #878672;
     border-radius: 50%;
-    color: #00d2c4;
+    color: #878672;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .contacto-redes a:hover {
-    background-color: #00d2c4;
+    background-color: #878672;
     color: #000000;
     transform: translateY(-3px);
 }
@@ -651,7 +654,7 @@ html {
 }
 /* Estilo general de la sección */
 .seccion-reserva {
-    background-color: #000000;
+    background-color: #878672;
     color: #ffffff;
     padding: 80px 5%;
     width: 100%;
@@ -676,7 +679,7 @@ html {
 
 .reserva-logo {
     font-size: 50px;
-    color: #00d2c4;
+    color: #545333;
     margin-bottom: 20px;
 }
 
@@ -703,7 +706,7 @@ html {
 
 /* Botón Enviar Solicitud */
 .btn-enviar {
-    background-color: #00d2c4;
+    background-color: #D9D7B6;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
@@ -734,7 +737,7 @@ html {
 .reserva-form textarea {
     width: 100%;
     background-color: transparent;
-    border: 2px solid #00d2c4;
+    border: 2px solid #D9D7B6;
     border-radius: 40px;
     padding: 16px 25px;
     color: #ffffff;
@@ -764,8 +767,8 @@ html {
 }
 /* --- ESTILOS DEL FOOTER TURQUESA --- */
 .site-footer {
-    background-color: #00d2c4; /* Fondo verde turquesa institucional */
-    color: #000000;             /* Texto e iconos en color negro */
+    background-color: #545333; /* Fondo verde turquesa institucional */
+    color: #fff;             /* Texto e iconos en color negro */
     padding: 40px 4%;
     width: 100%;
     box-sizing: border-box;
@@ -878,8 +881,8 @@ html {
 // Estilos paginasHtml primeraComunion.html
 /* Estilos generales de la sección */
 .seccion-comunion {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 340px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -971,7 +974,7 @@ html {
 }
 /* Estilos generales de la sección Quince Años */
 .seccion-quince {
-    background-color: #000000;
+    background-color: #878672;
     color: #ffffff;
     padding: 340px 5%;
     width: 100%;
@@ -1063,8 +1066,8 @@ html {
 }
 /* Estilos generales de la sección Graduaciones */
 .seccion-graduaciones {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 340px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1171,8 +1174,8 @@ html {
 }
 /* Estilos generales de la sección Comercial */
 .seccion-comercial {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 400px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1233,7 +1236,7 @@ html {
 .comercial-etiqueta {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #ffffff;
+    color: #000;
     text-align: center;
     margin-top: 15px;
     line-height: 1.2;
@@ -1279,8 +1282,8 @@ html {
 }
 /* Estilos generales de la sección Modelo */
 .seccion-modelo {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 400px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1341,7 +1344,7 @@ html {
 .modelo-etiqueta {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #ffffff;
+    color: #000;
     text-align: center;
     margin-top: 15px;
     line-height: 1.2;
@@ -1384,8 +1387,8 @@ html {
 }
 /* Estilos generales de la sección Vida Silvestre */
 .seccion-silvestre {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #D9D7B6;
+    color: #000;
     padding: 300px 5%;
     width: 100%;
     box-sizing: border-box;

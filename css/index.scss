@@ -69,7 +69,7 @@ html {
   display: none;
 }
 .inicio {
-    background-image: url('../img/imgBody.png');
+    background-image: url('../img/imgBody3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -872,5 +872,603 @@ html {
     .footer-container {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+
+// Estilos paginasHtml primeraComunion.html
+/* Estilos generales de la sección */
+.seccion-comunion {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 340px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comunion-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal grande */
+.comunion-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Cuadrícula principal de 3 columnas (Izquierda | Centro | Derecha) */
+.comunion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Estilo base para cada elemento contenedor de imagen */
+.comunion-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    height: 100%;
+}
+
+.comunion-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Columna Izquierda (Vertical grande) */
+.item-grande-izq {
+    min-height: 480px;
+}
+
+/* Sub-cuadrícula central (2x2 fotos) */
+.comunion-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.comunion-subgrid .comunion-item {
+    height: 230px; /* Altura controlada para las 4 fotos del centro */
+}
+
+/* Columna Derecha (Vertical grande) */
+.item-grande-der {
+    min-height: 480px;
+}
+
+/* --- Adaptabilidad Responsive para Móviles --- */
+@media (max-width: 900px) {
+    .comunion-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .comunion-titulo {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .item-grande-izq, 
+    .item-grande-der {
+        min-height: 350px;
+    }
+
+    .comunion-subgrid .comunion-item {
+        height: 250px;
+    }
+}
+/* Estilos generales de la sección Quince Años */
+.seccion-quince {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 340px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.quince-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal grande */
+.quince-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Cuadrícula principal de 3 columnas (Izquierda | Centro | Derecha) */
+.quince-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Estilo base para cada elemento contenedor de imagen */
+.quince-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    height: 100%;
+}
+
+.quince-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Columna Izquierda (Vertical grande) */
+.item-grande-izq {
+    min-height: 480px;
+}
+
+/* Sub-cuadrícula central (2 fotos apiladas verticalmente) */
+.quince-subgrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.quince-subgrid .quince-item {
+    height: 232px; /* Altura controlada para las 2 fotos del centro */
+}
+
+/* Columna Derecha (Vertical grande) */
+.item-grande-der {
+    min-height: 480px;
+}
+
+/* --- Adaptabilidad Responsive para Móviles --- */
+@media (max-width: 900px) {
+    .quince-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quince-titulo {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .item-grande-izq, 
+    .item-grande-der {
+        min-height: 350px;
+    }
+
+    .quince-subgrid .quince-item {
+        height: 250px;
+    }
+}
+/* Estilos generales de la sección Graduaciones */
+.seccion-graduaciones {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 340px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.graduaciones-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal */
+.graduaciones-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Contenedor principal de la galería */
+.graduaciones-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Estructura común de las filas */
+.graduaciones-fila {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Fila 1: 4 fotos verticales */
+.fila-cuatro {
+    grid-template-columns: repeat(4, 160px);
+}
+
+/* Fila 2: 3 fotos verticales centradas */
+.fila-tres {
+    grid-template-columns: repeat(3, 170px);
+}
+
+/* Fila 3: 2 fotos horizontales anchas */
+.fila-dos {
+    grid-template-columns: repeat(2, 320px);
+}
+
+/* Estilo base de los ítems e imágenes */
+.graduaciones-item {
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.fila-cuatro .graduaciones-item,
+.fila-tres .graduaciones-item {
+    height: 240px;
+}
+
+.fila-dos .graduaciones-item {
+    height: 210px;
+}
+
+.graduaciones-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Adaptabilidad Responsive para Móviles --- */
+@media (max-width: 768px) {
+    .graduaciones-titulo {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .fila-cuatro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fila-tres {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 250px;
+    }
+
+    .fila-dos {
+        grid-template-columns: 1fr;
+    }
+
+    .fila-cuatro .graduaciones-item,
+    .fila-tres .graduaciones-item,
+    .fila-dos .graduaciones-item {
+        height: 260px;
+    }
+}
+/* Estilos generales de la sección Comercial */
+.seccion-comercial {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 400px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comercial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título de la sección */
+.comercial-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Grid de 5 columnas para la galería */
+.comercial-galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1050px;
+    justify-content: center;
+}
+
+/* Tarjeta individual */
+.comercial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de la imagen */
+.comercial-img-box {
+    width: 100%;
+    height: 270px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.comercial-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Texto o etiqueta debajo de cada imagen */
+.comercial-etiqueta {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* Adaptabilidad para pantallas más pequeñas / móviles */
+@media (max-width: 1024px) {
+    .comercial-galeria {
+        gap: 12px;
+    }
+
+    .comercial-img-box {
+        height: 220px;
+    }
+
+    .comercial-etiqueta {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comercial-titulo {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .comercial-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    .comercial-img-box {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comercial-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 280px;
+    }
+}
+/* Estilos generales de la sección Modelo */
+.seccion-modelo {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 400px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modelo-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título de la sección */
+.modelo-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Grid de 6 columnas para la galería */
+.modelo-galeria {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1250px;
+    justify-content: center;
+}
+
+/* Tarjeta individual */
+.modelo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de la imagen */
+.modelo-img-box {
+    width: 100%;
+    height: 270px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.modelo-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Etiqueta de texto debajo de cada imagen */
+.modelo-etiqueta {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* Adaptabilidad para pantallas medianas y móviles */
+@media (max-width: 1100px) {
+    .modelo-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 20px;
+    }
+
+    .modelo-img-box {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modelo-titulo {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .modelo-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    .modelo-img-box {
+        height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modelo-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 280px;
+    }
+}
+/* Estilos generales de la sección Vida Silvestre */
+.seccion-silvestre {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 300px 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.silvestre-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal */
+.silvestre-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Primera cuadrícula (4 columnas iguales arriba) */
+.silvestre-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Segunda cuadrícula (Diseño de mosaico equilibrado de 2 columnas / 4 elementos) */
+.silvestre-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 280px);
+    gap: 20px;
+    width: 100%;
+}
+
+/* Estilo base para cada tarjeta de imagen */
+.silvestre-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #111111;
+    height: 100%;
+}
+
+.silvestre-grid-1 .silvestre-item {
+    height: 300px;
+}
+
+.silvestre-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Adaptabilidad Responsive para Móviles --- */
+@media (max-width: 900px) {
+    .silvestre-grid-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .silvestre-grid-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .silvestre-grid-2 .silvestre-item {
+        height: 280px;
+    }
+
+    .silvestre-titulo {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .silvestre-grid-1 {
+        grid-template-columns: 1fr;
     }
 }

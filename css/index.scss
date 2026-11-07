@@ -10,13 +10,13 @@ html {
 }
 //Estilos seccion BARRA DE NAVEGACION
 .contenedor-header {
-  background: #878672;
+  background: #CFCFC9;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  border-bottom: 1px solid #878672;
+  border-bottom: 1px solid #CFCFC9;
   header {
     max-width: 100%;
     margin: 20px auto;
@@ -27,35 +27,35 @@ html {
     .logo a {
       font-family: "Righteous";
       font-size: 36px;
-      color: #ffffff;
+      color: #FF7D01;
       text-decoration: none;
     }
     ul {
       display: flex;
       list-style: none;
       .reserva {
-        color: #000000;
-        background: #FDFBD4;
+        color: #FF7D01;
+        background: #012136;
         border-radius: 20px;
         padding: 10px 20px;
         transition: 0.5s;
         &:hover {
           background: #fff;
           a {
-            color: #545333;
+            color: #FF7D01;
           }
         }
       }
     }
     nav ul li a {
       text-align: none;
-      color: #fff;
+      color: #012136;
       margin: 0 15px;
       padding: 3px;
       transition: 0.5s;
       text-decoration: none;
       &:hover {
-        color: #545333;
+        color: #FF7D01;
       }
     }
   }
@@ -69,8 +69,8 @@ html {
   display: none;
 }
 .inicio {
-    background-image: url('../img/imgBody3.jpg');
-    margin-top: 150px;
+    background-image: url('../img/imgBody4.jpeg');
+    margin-top: 0px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -109,22 +109,22 @@ html {
     text-decoration: none;
 }
 .btn-reserva {
-    background-color: #878672;
+    background-color: #FF7D01;
     color: #fff;
     margin-right: 15px;
     &:hover {
         background-color: transparent;
         color: #fff;
-        border: 2px solid #878672;
+        border: 2px solid #CFCFC9;
         padding: 28px 30px;
       }
 }
 .btn-explora {
     background-color: transparent;
     color: #fff;
-    border: 2px solid #878672;
+    border: 2px solid #FF7D01;
     &:hover {
-        background-color: #878672;
+        background-color: #FF7D01;
         color: #111;
         padding: 28px 30px;
       }
@@ -165,12 +165,12 @@ html {
 
 /* Color naranja para los iconos */
 .icon-orange {
-    color: #FDFBD4; /* Tono naranja corporativo */
+    color: #012136; /* Tono naranja corporativo */
     font-size: 16px;
 }
 /* Sección contenedora general */
 .sobre-nosotros {
-    background-color: #FDFBD4;
+    background-color: #012136;
     color: #ffffff;
     padding: 500px 5%; /* Espaciado superior/inferior para dar aire a la sección */
 }
@@ -237,7 +237,7 @@ html {
 /* Estilo general de la sección */
 /* Estilo general de la sección con fondo turquesa y texto negro */
 .seccion-servicios {
-    background-color: #878672; /* Fondo turquesa */
+    background-color: #CFCFC9; /* Fondo turquesa */
     color: #000000;            /* Texto negro general */
     padding: 200px 5%;
 }
@@ -253,14 +253,14 @@ html {
     font-weight: 800;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    color: #ffffff;            /* Título negro */
+    color: #012136;            /* Título negro */
 }
 
 /* Párrafo descriptivo superior */
 .servicios-descripcion {
     font-size: 18px;
     line-height: 1.6;
-    color: #ffffff;            /* Texto descriptivo negro/oscuro */
+    color: #012136;            /* Texto descriptivo negro/oscuro */
     max-width: 800px;
     margin-bottom: 50px;
     font-family: 'Work Sans', sans-serif;
@@ -307,19 +307,19 @@ html {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
-    color: #ffffff;
+    color: #012136;
 }
 
 /* Descripciones de los servicios en negro */
 .tarjeta p {
     font-size: 16px;
     line-height: 1.5;
-    color: #ffffff;
+    color: #012136;
     font-family: 'Work Sans', sans-serif;
 }
 .portafolio-container{
-    background-color: #D9D7B6; /* Fondo turquesa */
-    color: #000;            /* Texto negro general */
+    background-color: #012136; /* Fondo turquesa */
+    color: #CFCFC7;            /* Texto negro general */
     padding: 200px 5%;
     .portafolio-header{
         margin-bottom: 2%;
@@ -388,8 +388,8 @@ html {
 }
 /* Estilo general de la sección de paquetes */
 .seccion-paquetes {
-    background-color: #878672;
-    color: #ffffff;
+    background-color: #CFCFC9;
+    color: #012136;
     padding: 250px 4%;
     width: 100%;
     box-sizing: border-box;
@@ -413,7 +413,7 @@ html {
 
 .paquetes-header p {
     font-size: 16px;
-    color: #d1d1d1;
+    color: #012136;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -474,13 +474,21 @@ html {
 
 /* Colores de fondo de los overlays */
 .paquete-overlay.naranja {
-    background-color: #545333; /* Color naranja institucional */
+    background-color: #012136; /* Color naranja institucional */
     color: #ffffff;
+    &:hover {
+        background-color: #012136; /* Color naranja institucional */
+        color: #FF7D01;
+    }
 }
 
 .paquete-overlay.turquesa {
-    background-color: #FDFBD4; /* Color turquesa de tu marca */
-    color: #000000;
+    background-color: #012136; /* Color turquesa de tu marca */
+    color: #ffffff;
+        &:hover {
+        background-color: #012136; /* Color naranja institucional */
+        color: #FF7D01;
+    }
 }
 
 /* Tipografía dentro del botón/overlay */
@@ -504,7 +512,7 @@ html {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    color: #ffffff;
+    color: #012136;
 }
 
 /* --- Adaptabilidad para pantallas más pequeñas --- */
@@ -528,8 +536,8 @@ html {
 }
 /* Estilo general de la sección de contacto */
 .seccion-contacto {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 300px 8%;
     width: 100%;
     box-sizing: border-box;
@@ -558,7 +566,7 @@ html {
 .contacto-logo img {
     width: 100%;
     object-fit: contain;
-    color: #000;
+    color: #CFCFC7;
     width: 200px;
 }
 
@@ -573,7 +581,7 @@ html {
 .contacto-subbrand {
     font-size: 18px;
     font-weight: 400;
-    color: #000;
+    color: #CFCFC7;
     margin-top: 5px;
     margin-bottom: 25px;
     letter-spacing: 1px;
@@ -582,7 +590,7 @@ html {
 .contacto-descripcion {
     font-size: 14px;
     line-height: 1.6;
-    color: #000;
+    color: #CFCFC7;
     font-family: 'Work Sans', sans-serif;
     max-width: 450px;
 }
@@ -607,12 +615,12 @@ html {
     margin-bottom: 20px;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #CFCFC7;
 }
 
 /* Iconos de ubicación, teléfono y correo en color turquesa */
 .contacto-list li i {
-    color: #878672;
+    color: #CFCFC9;
     font-size: 18px;
     width: 30px;
     margin-right: 15px;
@@ -631,16 +639,16 @@ html {
     align-items: center;
     width: 40px;
     height: 40px;
-    border: 2px solid #878672;
+    border: 2px solid #CFCFC9;
     border-radius: 50%;
-    color: #878672;
+    color: #CFCFC9;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .contacto-redes a:hover {
-    background-color: #878672;
+    background-color: #CFCFC9;
     color: #000000;
     transform: translateY(-3px);
 }
@@ -654,8 +662,8 @@ html {
 }
 /* Estilo general de la sección */
 .seccion-reserva {
-    background-color: #878672;
-    color: #ffffff;
+    background-color: #CFCFC9;
+    color: #012136;
     padding: 80px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -679,7 +687,7 @@ html {
 
 .reserva-logo {
     font-size: 50px;
-    color: #545333;
+    color: #012136;
     margin-bottom: 20px;
 }
 
@@ -697,7 +705,7 @@ html {
 
 .reserva-col-left p {
     font-size: 15px;
-    color: #cccccc;
+    color: #012136;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.6;
     margin-bottom: 35px;
@@ -706,8 +714,8 @@ html {
 
 /* Botón Enviar Solicitud */
 .btn-enviar {
-    background-color: #D9D7B6;
-    color: #000000;
+    background-color: #012136;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     padding: 16px 45px;
@@ -737,10 +745,10 @@ html {
 .reserva-form textarea {
     width: 100%;
     background-color: transparent;
-    border: 2px solid #D9D7B6;
+    border: 4px solid #012136;
     border-radius: 40px;
     padding: 16px 25px;
-    color: #ffffff;
+    color: #012136;
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
@@ -754,7 +762,7 @@ html {
 
 .reserva-form input::placeholder,
 .reserva-form textarea::placeholder {
-    color: #ffffff;
+    color: #012136;
     font-weight: 500;
 }
 
@@ -767,7 +775,7 @@ html {
 }
 /* --- ESTILOS DEL FOOTER TURQUESA --- */
 .site-footer {
-    background-color: #545333; /* Fondo verde turquesa institucional */
+    background-color: #012136; /* Fondo verde turquesa institucional */
     color: #fff;             /* Texto e iconos en color negro */
     padding: 40px 4%;
     width: 100%;
@@ -835,7 +843,7 @@ html {
 }
 
 .footer-col ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -881,8 +889,8 @@ html {
 // Estilos paginasHtml primeraComunion.html
 /* Estilos generales de la sección */
 .seccion-comunion {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 340px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -974,8 +982,8 @@ html {
 }
 /* Estilos generales de la sección Quince Años */
 .seccion-quince {
-    background-color: #878672;
-    color: #ffffff;
+    background-color: #CFCFC9;
+    color: #012136;
     padding: 340px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1066,8 +1074,8 @@ html {
 }
 /* Estilos generales de la sección Graduaciones */
 .seccion-graduaciones {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 340px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1174,8 +1182,8 @@ html {
 }
 /* Estilos generales de la sección Comercial */
 .seccion-comercial {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 400px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1236,7 +1244,7 @@ html {
 .comercial-etiqueta {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #000;
+    color: #CFCFC7;
     text-align: center;
     margin-top: 15px;
     line-height: 1.2;
@@ -1282,8 +1290,8 @@ html {
 }
 /* Estilos generales de la sección Modelo */
 .seccion-modelo {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 400px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1344,7 +1352,7 @@ html {
 .modelo-etiqueta {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #000;
+    color: #CFCFC7;
     text-align: center;
     margin-top: 15px;
     line-height: 1.2;
@@ -1387,8 +1395,8 @@ html {
 }
 /* Estilos generales de la sección Vida Silvestre */
 .seccion-silvestre {
-    background-color: #D9D7B6;
-    color: #000;
+    background-color: #012136;
+    color: #CFCFC7;
     padding: 300px 5%;
     width: 100%;
     box-sizing: border-box;
@@ -1477,8 +1485,8 @@ html {
 }
 /* Estilos Generales de la Sección con tonos de fotografía antigua */
 .packages-section {
-  background-color: #D9D7B6; /* Fondo crema claro principal */
-  color: #4A4A3B; /* Texto oscuro cálido para legibilidad óptima */
+  background-color: #CFCFC7; /* Fondo crema claro principal */
+  color: #012136; /* Texto oscuro cálido para legibilidad óptima */
   padding: 250px 20px;
   font-family: 'Poppins', sans-serif;
 }
@@ -1490,7 +1498,7 @@ html {
 }
 
 .section-subtitle {
-  color: #6C6B50; /* Tono topo/gris cálido */
+  color: #012136; /* Tono topo/gris cálido */
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1503,7 +1511,7 @@ html {
   margin-bottom: 50px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #383A2C; /* Tono oliva oscuro profundo */
+  color: #012136; /* Tono oliva oscuro profundo */
 }
 
 /* Grid de Tarjetas */
@@ -1516,8 +1524,8 @@ html {
 
 /* Tarjeta Individual */
 .pricing-card {
-  background: #F4F2C9; /* Tono arena claro derivado de la paleta */
-  border: 1px solid #D9D7B6; /* Borde sutil en tono arena */
+  background: #012136; /* Tono arena claro derivado de la paleta */
+  border: 1px solid #CFCFC7; /* Borde sutil en tono arena */
   border-radius: 16px;
   padding: 40px 30px;
   display: flex;
@@ -1534,8 +1542,8 @@ html {
 
 /* Tarjeta Destacada */
 .pricing-card.featured {
-  border: 2px solid #545333; /* Verde oliva oscuro para destacar */
-  background: #EFECC2; /* Variante un poco más cálida para el paquete central */
+  border: 2px solid #028482; /* Verde oliva oscuro para destacar */
+  background: #012136; /* Variante un poco más cálida para el paquete central */
   box-shadow: 0 10px 30px rgba(84, 83, 51, 0.15);
 }
 
@@ -1544,8 +1552,8 @@ html {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #545333; /* Verde oliva oscuro */
-  color: #FDFBD4; /* Texto crema */
+  background: #028482; /* Verde oliva oscuro */
+  color: #ffffff; /* Texto crema */
   font-size: 0.75rem;
   font-weight: 700;
   padding: 6px 16px;
@@ -1555,7 +1563,7 @@ html {
 
 /* Contenido de la Tarjeta */
 .card-title {
-  color: #545333; /* Verde oliva oscuro para los títulos de paquetes */
+  color: #ffffff; /* Verde oliva oscuro para los títulos de paquetes */
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -1564,7 +1572,7 @@ html {
 .card-price {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #383A2C; /* Tono oliva muy oscuro para destacar el precio con clase */
+  color: #ffffff; /* Tono oliva muy oscuro para destacar el precio con clase */
   margin-bottom: 25px;
 }
 
@@ -1579,7 +1587,7 @@ html {
 
 .card-features li {
   font-size: 0.95rem;
-  color: #5A5946; /* Texto secundario legible y suave */
+  color: #ffffff; /* Texto secundario legible y suave */
   margin-bottom: 14px;
   line-height: 1.5;
   display: flex;
@@ -1587,7 +1595,7 @@ html {
 }
 
 .check {
-  color: #545333; /* Visto en tono oliva oscuro */
+  color: #ffffff; /* Visto en tono oliva oscuro */
   font-weight: bold;
   margin-right: 10px;
   font-size: 1.1rem;
@@ -1604,21 +1612,102 @@ html {
 }
 
 .btn-card.outline {
-  border: 1.5px solid #545333;
-  color: #545333;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
   background: transparent;
 }
 
 .btn-card.outline:hover {
-  background: #545333;
-  color: #FDFBD4;
+  background: #ffffff;
+  color: #012136;
 }
 
 .btn-card.primary {
-  background: #545333;
-  color: #FDFBD4;
+  background: #028482;
+  color: #ffffff;
 }
 
 .btn-card.primary:hover {
-  background: #383A2C;
+  background: #ffffff;
+  color: #028482;
+}
+/* Sección Sobre Nosotros - Réplica exacta del diseño oscuro */
+.about-section {
+  background-color: #041c2c; /* Azul noche oscuro idéntico a la imagen */
+  color: #ffffff;
+  padding: 400px 20px;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+}
+
+/* Cita y barra vertical blanca */
+.about-quote-box {
+  border-left: 4px solid #ffffff; /* Barra blanca limpia */
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.about-quote {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.about-brand {
+  display: block;
+  color: #d97706; /* Color naranja idéntico al logo de la imagen */
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Bloque de texto */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0; /* Blanco suave muy legible */
+  margin: 0;
+  max-width: 750px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .about-quote {
+    font-size: 1.6rem;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+  }
 }
